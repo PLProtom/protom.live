@@ -5,7 +5,6 @@ function menu(button) {
     var social = document.getElementsByClassName("social");
     var menu = document.getElementsByClassName("menu");
     
-
     if(button == "home") {
         content[0].style.display = "none";
         projects[0].style.display = "none";
