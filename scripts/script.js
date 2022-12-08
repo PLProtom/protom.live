@@ -17,3 +17,12 @@ $(document).ready(function(){
     }
   });
 });
+
+// Submit form
+$(document).ready(function() {
+  $(document).on('submit', '#my-form', function() {
+    var name = $("[name='name']").val();
+    $('#placeholder').html(`Thank you <b>${name}</b> for your submission!`);
+    return false;
+  });
+});

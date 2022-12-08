@@ -5,18 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="scripts/script.js"></script>
 </head>
 <body>
 
   <header id="home">
-    <h2>protom.live</h2>
-    <div class="container">
-      <div class="line-container">
-        <div class="line"></div>
+    <h2 class="animate__animated animate__zoomInDown">protom.live</h2>
+    <a href="#navbar">
+      <div class="container">
+        <div class="line-container">
+          <div class="line"></div>
+        </div>
       </div>
-    </div>
+    </a>
   </header>
 
   <div id="navbar">
@@ -35,6 +38,8 @@
         <a href="https://github.com/PLProtom" target="_blank"><img src="img/github.png" alt="Github logo"></a>
         <a href="https://twitter.com/vProtom" target="_blank"><img src="img/twitter.png" alt="Twitter logo"></a>
         <a href="https://www.twitch.tv/vProtom" target="_blank"><img src="img/twitch.png" alt="Twitch logo"></a>
+        <a onclick="alert('Protom#6913')"><img src="img/discord.png" alt="Discord logo"></a>
+
       </div>
     </div>
     
@@ -42,14 +47,81 @@
     
     <div class="content-item" id="projects">
       <h3>Projects</h3>
-      <p>Projects content</p>
+      <div class="media-scroller snaps-inline">
+
+        <div class="media-element">
+          <a target="_blank" href="http://protom.live"><img src="img/website.png" alt="this website"></a>
+          <p class="title">My own website (you're on it!)</p>
+        </div>
+
+        <div class="media-element">
+          <a target="_blank" href="https://github.com/PLProtom/Unity-VR"><img src="img/rythmvr.png" alt="screenshot of game"></a>
+          <p class="title">RythmVR</p>
+        </div>
+
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="img/parallax2.png" alt="fragment of code"></a>
+          <p class="title">Twitch AutoMod</p>
+        </div>
+
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="img/bot.png" alt="discord bot profile"></a>
+          <p class="title">Discord Bots</p>
+        </div>
+
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        <div class="media-element">
+          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
+          <p class="title">Placeholder</p>
+        </div>
+        
+        
+      </div>
     </div>
 
     <div class="parallax" id="img3"></div>
     
     <div class="content-item" id="contact">
       <h3>Contact</h3>
-      <p>Contact content</p>
+      <div class="form">
+        <form method="post" action="" id="my-form">
+          <div class="username">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <textarea name="message" placeholder="Message" required></textarea>
+          <div>
+            <input type="submit" value="Send">
+          </div>
+          <div class="placeholder">
+            <p id="placeholder"></p>
+          </div>
+        </form>
+      </div>
     </div>
   </main>
 
