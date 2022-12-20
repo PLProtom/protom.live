@@ -1,4 +1,40 @@
 <!DOCTYPE html>
+<!--
+⣿⣿⣿⣿⡿⠟⠛⠋⠉⠉⠉⠉⠉⠛⠛⠻⠿⢿
+⣿⣿⠟⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠈⠙⠾⣿
+⠋⡁⠀⠀⠀⠀⠀⢀⠔⠁⠀⠀⢀⠠⠐⠈⠁⠀⠀⠁⠀⠈⠻⢾
+⠊⠀⠀⠀⠀⢀⠔⠃⠀⠀⠠⠈⠁⠀⠀⠀⠀⠀⠀⠆⠀⠀⠄⠀⠙⣾
+⠀⠀⠀⠀⡠⠉⠀⠀⠀⠀⠠⢰⢀⠀⠀⠀⠀⠀⠀⢰⠀⠀⠈⡀⠀⠈⢿
+⠀⠀⢀⡜⣐⠃⠀⠀⠀⣠⠁⡄⠰⠀⠀⠀⠀⠀⠀⠐⠀⠀⠀⠰⠀⠀⠈⢿
+⠀⢠⠆⢠⡃⠀⠀⠀⣔⠆⡘⡇⢘⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⣿
+⢀⡆⠀⡼⢣⠀⢀⠌⢸⢠⠇⡇⢘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿
+⣼⣃⠀⠁⢸⢀⠎⠀⢸⠎⠀⢸⢸⡄⠀⠀⠀⠀⠀⠂⢀⠀⠀⠀⠀⠀⠀⠀⠀⣿
+⠃⡏⠟⣷⣤⠁⠀⠀⠸⠀⠀⡾⢀⢇⠀⠀⠀⠀⠀⠄⠸⠀⠀⠀⠀⠄⠀⠀⠀⣿
+⠀⠀⣀⣿⣿⣿⢦⠀⠀⠀⠀⡧⠋⠘⡄⠀⠀⠀⠀⡇⢸⠀⠀⠠⡘⠀⠀⠀⢠⣿
+⠈⠀⢿⢗⡻⠃⠀⠀⠀⠀⠀⠀⠀⠀⠱⡀⠀⠀⢰⠁⡇⠀⠀⢨⠃⡄⢀⠀⣸
+⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣱⠀⠀⡎⠸⠁⠀⢀⠞⡸⠀⡜⢠⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣺⣿⣧⢰⣧⡁⡄⠀⡞⠰⠁⡸⣠⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⡿⠏⣿⠟⢁⠾⢛⣧⢼⠁⠀⠀⢰
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠡⠄⠀⡠⣚⡷⠊⠀⠀⠀⣿
+⡀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠁⢸⠁⠀⠀⠀⢰
+⠱⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠊⠀⠀⠀⡞⠀⠀⠀⠀⢸
+⠀⠙⢦⣀⠀⠀⠀⠀⠀⢀⣀⣠⠖⠁⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⣸
+⠀⠀⠀⠀⠉⠉⣩⡞⠉⠁⠀⢸⡄⠀⠀⠀⠀⠀⢰⠇⠀⠀⠀⠀⣿
+⡆⠀⠀⣀⡠⠞⠁⣧⢤⣀⣀⣀⡇⠀⠀⠀⠀⠀⣸⠀⠀⠀⠀⠀⣿
+⣿⣷⠊⠁⠀⠀⡰⠁⠀⠀⠀⠀⣹⠶⢦⡀⠀⠀⡇⠀⠀⠀⠀⠀⢸
+⣿⢿⠀⠀⠀⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⡄⡇⠀⠀⠀⠀⠀⠈⣿
+⠋⠈⠀⢀⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠈⣧⠀⠀⠀⠀⠀⠀⠻
+⢀⡄⡠⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠁⠀⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⣿
+⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠐⠀⠀⠀⠀⣀⡿⠀⠀⠀⠀⠀⠀⠀⢹
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡼⠀⠀⠀⠀⠀⢀⣃⡇⠀⠲⡀⠀⠀⠀⠀⠈⣿
+⣀⠤⠤⠤⡀⠀⠀⠀⠀⡴⠃⠀⠀⠀⠀⠀⢬⠞⡇⠀⠀⠇⠀⠀⠀⠀⠀⣿
+⡁⢀⠀⠀⡇⠀⠀⠀⡼⠁⠀⠀⠀⠀⠀⣸⠁⠀⠇⠀⠀⡇⠀⠀⠀⠀⠀⣿
+⠔⠃⠀⠀⡇⠀⠀⡼⠁⠀⠀⠀⠀⠀⢀⡇⠀⠀⡃⠀⠀⠙⢄⠀⠀⠀⠀⣿
+⠒⠊⠀⠀⢸⠀⣸⠃⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⢅⠀⠀⡂⠸⡄⠀⠀⠀⣿
+⠓⠀⠉⠀⢸⣰⠃⠀⠀⠀⠀⠀⠀⡜⡆⠀⠀⠀⢸⠀⠀⡇⢀⠇⠀⠀⠀⣿
+⠉⠁⠀⢠⠞⠀⠀⠀⠀⠀⠀⠀⣰⠁⡇⠀⠀⠀⡇⠀⠀⡇⢸⠀⠀⠀⠀⣿
+⡀⠀⢀⢿⣥⡤⠤⠤⠤⣀⣀⢠⠇⠀⢸⠀⠀⢰⠁⠀⢨⠀⢸⠀⠀⠀⠀⣿
+-->
 <html>
 <head>
   <title>Index</title>
@@ -55,11 +91,6 @@
         </div>
 
         <div class="media-element">
-          <a target="_blank" href="https://github.com/PLProtom/Unity-VR"><img src="img/rythmvr.png" alt="screenshot of game"></a>
-          <p class="title">RythmVR</p>
-        </div>
-
-        <div class="media-element">
           <a target="_blank" href="#"><img src="img/parallax2.png" alt="fragment of code"></a>
           <p class="title">Twitch AutoMod</p>
         </div>
@@ -70,36 +101,10 @@
         </div>
 
         <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
+          <a target="_blank" href="https://github.com/PLProtom/Unity-VR"><img src="img/rythmvr.png" alt="screenshot of game"></a>
+          <p class="title">RythmVR</p>
         </div>
-        
-        <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
-        </div>
-        
-        <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
-        </div>
-        
-        <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
-        </div>
-        
-        <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
-        </div>
-        
-        <div class="media-element">
-          <a target="_blank" href="#"><img src="https://via.placeholder.com/300x250" alt="Placeholder"></a>
-          <p class="title">Placeholder</p>
-        </div>
-        
-        
+
       </div>
     </div>
 
@@ -107,20 +112,8 @@
     
     <div class="content-item" id="contact">
       <h3>Contact</h3>
-      <div class="form">
-        <form method="post" action="" id="my-form">
-          <div class="username">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-          </div>
-          <textarea name="message" placeholder="Message" required></textarea>
-          <div>
-            <input type="submit" value="Send">
-          </div>
-          <div class="placeholder">
-            <p id="placeholder"></p>
-          </div>
-        </form>
+      <br>
+      <p>Contact me at discord: <b>Protom#6913</b></p>
       </div>
     </div>
   </main>
